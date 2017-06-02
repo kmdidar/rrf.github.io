@@ -1,0 +1,255 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+body, html{height: 100%;}
+a:hover { text-decoration: none }
+
+.well-come-hero-area{
+    background-image: url(../img/nutrition.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+.hero-area-logo h3{font-family: 'Mr De Haviland', cursive;}
+.header-area{
+    position: absolute;
+    left: 0
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+}
+.logo a{
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.logo a::after {
+    background: #fff none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.main-menu ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.main-menu ul li {
+    display: inline-block;
+    padding-left: 30px;
+}
+.main-menu ul li a {
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    position: relative;
+    z-index: 1;
+}
+.main-menu ul li a::after {
+    background: #fff none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    transition: .3s;
+    -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.main-menu ul li a:hover {
+    color:  rgb(197, 157, 95);
+}
+.main-menu ul li a:hover::after{
+    background: rgb(197, 157, 95) none repeat scroll 0 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+.main-menu {
+    margin-top: 8px;
+    transition: .3s;
+}
+.logo h1 {
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin: 0;
+}
+.well-come-hero-area::after {
+    background: #000 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.hero_area-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.hero-area-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.hero-area-logo h3 {
+    color: #c49a53;
+    font-size: 76px;
+    line-height: 20px;
+    text-transform: none;
+}
+.hero-area-logo h2 {
+    color: #fff;
+    font-size: 50px;
+    letter-spacing: 14px;
+    text-transform: uppercase;
+}
+.boderd-area {
+    margin: 0 auto;
+    max-width: 335px;
+    overflow: hidden;
+    margin-bottom: 22px;
+}
+.boderd-area-right, .boderd-area-left {
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    height: 2px;
+    width: 41%;
+    margin-top: 8px;
+    position: relative;
+}
+.boderd-area-right:before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-right: 10px solid #fff;
+    border-bottom: 5px solid transparent;
+    right: 0;
+    top: -4px;
+}
+.boderd-area-left:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-left: 10px solid #fff;
+    border-bottom: 5px solid transparent;
+    left: 0;
+    top: -4px;
+}
+.boderd-area i.fa {
+    float: left; 
+    color: #fff;
+    font-size: 16px;
+    margin: 0 20px;
+    -webkit-animation: rotate1 4s linear infinite;
+    animation: rotate1 4s linear infinite;
+}
+
+.hero-area-logo {
+    color: #fff;
+    text-transform: uppercase;
+}
+.scroll-to-about {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    color: #fff;
+    font-size: 45px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    margin-left: -20px;
+    opacity: .8;
+}
+@-webkit-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -webkit-transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-30px);
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+    }
+}
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+/* include this only once */
+
+@-webkit-keyframes rotate1 {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes rotate1 {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
