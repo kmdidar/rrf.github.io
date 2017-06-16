@@ -1,0 +1,36 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+  
+    .hero-text h1{color: red}
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+ 	
+ 	.hero-text h1{color: green}
+    
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+ 	
+ 	.hero-text {padding-top: 150px;padding-bottom: 50px;}
+ 	.hero-text h1{color: yellow}
+    .well-come-area{
+    	height: auto;
+    }
+    .hero-area-table{
+    	display: block;
+    	height: auto;
+    }
+    .logo{margin-bottom: 20px;}
+    .logo, .mainmenu{text-align: center;}
+    .copy-right-area{
+    	position: relative;
+    	text-align: center;}
+    .copy-right-area ul{text-align: center;}
+    .copy-right-area ul li{padding: 0 15px;margin-top: 15px;}
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+	
+	.hero-text h1{color: pink}
+}
