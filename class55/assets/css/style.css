@@ -1,0 +1,140 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+
+}
+a:hover { text-decoration: none }
+
+.section-padding{
+    padding: 120px 0px;
+}
+
+
+.video-play-btn{
+    display: block;
+    background-size: 107%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 450px;
+    display: table;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    position: relative;
+}
+.video-play-btn:before{
+    position: absolute;
+    content: "\f04b";
+    left: 50%;
+    top: 50%;
+    font-family: FontAwesome;
+    font-size: 30px;
+    width: 80px;
+    height: 80px;
+    background: #e91d38;
+    color: #fff;
+    line-height: 80px;
+    border-radius: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+}
+.video-play-btn:hover{
+    color: #fff;
+    background-size: 110%;
+    
+}
+.video-play-btn:hover .video-overlay{
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+}
+.video-overlay{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+}
+.video-overlay:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(244,29,56,0.7);
+    z-index: -1;
+}
+.plus-boxed{
+    height: 30px;
+    width: 30px;
+    border: 2px solid;
+    line-height: 26px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.video-title{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
+.video-title span{
+    position: relative;
+    z-index: 1
+}
+.video-title span:before, .video-title span:after{
+    position: absolute;
+    content: "";
+    left: -35px;
+    top: 7px;
+    height: 1px;
+    width: 25px;
+    background: #fff; 
+}
+.video-title span:after{
+    right: -35px;
+    left: auto
+}
+.video-overlay h3{
+    font-weight: 800;
+    font-size: 27px
+}
