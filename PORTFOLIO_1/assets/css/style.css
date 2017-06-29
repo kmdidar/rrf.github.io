@@ -589,6 +589,13 @@ a:focus {
     -webkit-background-size: cover;
     background-size: cover;
     background-color: #ddd;
+    transition: all 0.3s ease 0s;
+}
+.single-blog-item:hover .blog-thumnail{
+    transform: scale(1.2);
+}
+.overflow-area{
+    overflow: hidden;
 }
 .single-blog-item {
     border: 1px solid #ccc;
@@ -598,6 +605,7 @@ a:focus {
 }
 .single-blog-item:hover {
     border-color: #00a8e7;
+    box-shadow: 0 0 10px #ddd;
 }
 .blog-box-content {
     font-size: 14px;
