@@ -1,0 +1,175 @@
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+.feature-icon i:after {
+    top: 6%;
+    left: 39%;
+}
+
+.counter-box h5 {
+    font-size: 15px;
+}
+
+.port2-img h5 {
+	font-size: 15px;
+}
+
+}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+h2 {
+	font-size: 33px;
+}
+
+
+.navbar-default .navbar-nav>li>a {
+    padding: 12px;
+}
+
+.banner-area {
+    background-size: 100% 100%;
+}
+
+.feature-icon i:after {
+	left: 45%;
+}
+
+.latest-img:hover:before {
+	width: 87%;
+}
+
+.latest-img p {
+	top: 51%;
+    left: 35%;
+}
+
+.counter-box h5 {
+	margin-bottom: 0px;
+}
+
+.res-btm {
+	margin-bottom: 50px;
+} 
+
+.team-img:before {
+	width: 97.2%;
+}
+
+.team-text {
+    margin: 0 20px 0 0px;
+}
+
+.skill-details {
+    padding-top: 30px;
+}
+
+.wraper {
+    width: 100%;
+    margin: 50px 0 -15px;
+}
+
+.port-img p {
+    left: 39%;
+}
+
+.port2-img h5 {
+	left: 30%;
+}
+
+}
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+	margin-top: 15px;
+    color: #222;
+}
+
+.sticky .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+	margin-top: 15px;
+    color: #fff;
+}
+
+h2 {
+	font-size: 35px;
+}
+
+.latest-img:hover:before {
+    width: 85%;
+}
+
+.latest-img p {
+	top: 52%;
+    left: 35%;
+}
+
+.res-btm {
+	margin-bottom: 50px;
+}
+
+.team-img:before {
+	width: 95%;
+}
+
+.feature-icon i:after {
+	left: 45%;
+}
+
+.skill-details {
+    padding-top: 30px;
+}
+
+.wraper {
+    width: 100%;
+    margin: 50px 0 -15px;
+}
+
+.port-img p {
+	left: 39%;
+}
+
+.port2-img h5 {
+    left: 31%;
+}
+
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+h2 {
+    font-size: 30px;
+}
+
+.feature-icon i:after {
+    left: 43%;
+}
+
+.latest-img:hover:before {
+    width: 100%;
+}
+
+.counter-box h5 {
+	margin-bottom: 0px;
+}
+
+.team-img:before {
+	width: 100%;
+}
+
+.heading-title {
+	width: 94%;
+	height: 51%;
+}
+
+}

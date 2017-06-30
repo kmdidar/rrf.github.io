@@ -1,0 +1,1035 @@
+/*
+-----------------------------------
+Theme Name: Portfolio Template
+Author: K. M. Didarul
+Description: Portfolio Html Template
+Version: 1.0
+Primary use: portfolio, agency, responsive, template, personal, photography, photographer, photo blog, model portfolio, creative, onepage, multipage, html template, etc.
+Support: rumon078102@gmail.com;
+-----------------------------------
+*/
+
+
+/* [Master Stylesheet]
+-----------------------------------
+1. General styles
+2. Typography
+    2.1. Transition Style
+    2.2. Transform Style
+    2.3. Button Style
+
+3. Header Top Area
+4. Banner Area
+    4.1. banner2 Area
+    4.2. 404 Page
+
+5. Feature Area
+6. About Area
+    6.1. About Area (Home Page3)
+
+7. Portfolio Area
+    7.1. (2 Column) Portfolio page
+    7.2. (4 Column) Portfolio page
+
+8. Counter Area
+9. Blog Area
+    9.1. Blog Area (Home Page2)
+    9.2. Blog Area (Blog4 Page)
+
+10. Feedback Area
+11. Team Area
+12. Contact Area
+13. Google Map Area
+14. Preloader Area
+15. Footer Area
+    15.1. Top arrow scroll area
+
+16. Home V2(Agency) Page
+
+
+-----------------------------------
+*/
+
+
+/*
+-------------------------------------------
+1. General Style
+-------------------------------------------
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700');
+@import url('https://fonts.googleapis.com/css?family=Istok+Web:400,700');
+body {
+    font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+    text-align: left;
+    font-size: 14px;
+    line-height: 17px;
+    word-wrap: break-word;
+    background-color: rgba(238, 238, 238, 0.55);
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.focus {
+    color: transparent !important;
+    outline: 0;
+    outline-color: transparent !important;
+}
+
+
+/*
+-------------------------------------
+2. Typography
+-------------------------------------
+*/
+
+h1 {
+    font-family: 'Istok Web', sans-serif;
+    font-size: 48px;
+    line-height: 50px;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Istok Web', sans-serif;
+    letter-spacing: 5px;
+    color: #343536;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'Istok Web', sans-serif;
+    font-size: 18px;
+    color: #343536;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: 'Istok Web', sans-serif;
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+h5 {
+    font-family: 'Istok Web', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none !important;
+    color: #343536;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+    color: #343536;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p {
+    font-family: 'Lora', serif;
+    letter-spacing: 1px;
+    color: #7D888E;
+    line-height: 24px;
+    font-weight: 400;
+    left: -1px;
+}
+
+
+/*
+-------------------------------------
+2.1. Transition Style
+-------------------------------------
+*/
+
+.sticky .dropdown-menu li,
+.purchase-btn a,
+.sticky .navbar-default,
+.feature-icon i,
+.feature-icon i:after,
+.single-feature:hover,
+.social-icons i,
+button.control,
+.latest-img:before,
+.latest-img h5,
+.port-img h5,
+.port2-img h5,
+.blog-img img,
+.owl-nav [class*=owl-],
+.team-img:before,
+.contact-icon i{
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+
+
+.single-feature:hover .feature-icon i:after,
+.blog-img:hover img {
+    transition-duration: 2s;
+    -webkit-transition-duration: all 2s ease-in-out 0s;
+    -moz-transition-duration: all 2s ease-in-out 0s;
+    -ms-transition-duration: all 2s ease-in-out 0s;
+    -o-transition-duration: all 2s ease-in-out 0s;
+}
+
+
+/*
+-------------------------------------
+2.2. Transform Style
+-------------------------------------
+*/
+
+.single-feature:hover .feature-icon i:after {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+
+.latest-img:hover h5,
+.latest-img:hover p,
+.blog-img{
+   transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+
+.latest-img h5,
+.latest-img p,
+.port-img h5,
+.port-img p,
+.port2-img h5,
+.port2-img p{
+      transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+}
+
+
+.blog-img:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+/*
+-------------------------------------
+2.3. Button Style
+-------------------------------------
+*/
+
+.purchase-btn {
+    margin-top: 50px;
+    display: inline-block;
+}
+
+.purchase-btn a {
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #ddd;
+    padding: 10px 25px;
+    color: #343536;
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+
+
+/*
+-------------------------------------
+2.4. Hover Style
+-------------------------------------
+*/
+
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #343536;
+}
+
+.sticky .navbar-default li a:focus,
+.sticky .navbar-default li a:hover{
+    color: #fff;
+}
+
+
+.purchase-btn:hover a,
+.social-icons i:hover,
+button.control:hover,
+.contact-icon i:hover,
+.single-feature:hover .feature-icon i,
+.owl-nav [class*=owl-]:hover{
+    background: #343536;
+    color: #fff;
+}
+
+.single-feature:hover {
+    box-shadow: 0 0 5px 0px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+.about-text h3:hover,
+.blog-meta h3:hover{
+    color: #5CB2DA;
+}
+
+.latest-img:hover:before {
+    width: 100%;
+    opacity: 1;
+}
+
+.latest-img:hover h5 {
+    top: 45%;
+}
+
+.blog-img:hover img {
+    overflow: hidden;  
+}
+
+.team-group:hover p.another,
+.team-group:hover p.bold{
+    color: #343536;
+}
+
+.team-group:hover .team-img:before {
+    opacity: 1;
+    height: 100%;
+}
+
+
+
+
+
+/*
+-------------------------------------
+3. Header Top Area
+-------------------------------------
+*/
+
+.navbar-default {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.navbar-default {
+    text-transform: uppercase;
+    background-color: transparent;
+    border-color: rgba(52, 53, 54, 0.38);
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #343536;
+}
+
+.navbar-default ul li a {
+    color: #343536;
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.dropdown-menu {
+    border-color: rgba(52, 53, 54, 0.38);
+}
+
+.dropdown ul li a {
+    padding: 12px;
+    color: #343536;
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.navbar-default .navbar-brand {
+    color: #343536;
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.sticky .dropdown-menu li {
+    background: #343536;
+}
+
+.sticky .navbar-default {
+    background: #343536;
+
+}
+
+.sticky .navbar-default li a {
+    color: #fff;
+}
+
+.sticky .navbar-brand {
+    color: #fff;
+}
+
+
+/*
+-------------------------------------
+4. Banner Area
+-------------------------------------
+*/
+
+.banner-area {
+    background-image: url(../img/banner-2.jpg);
+    background-size: cover;
+}
+
+.banner-bg {
+    background: rgba(245, 245, 245, 0.65);
+    background-size: cover;
+}
+
+.banner-text {
+    padding: 200px 0;
+    text-align: center;
+}
+
+
+/*--- 4.1. banner2 Area (Home Slider Page)-----*/
+
+.heading-title {
+    display: table;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+}
+
+.table {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.ws_imges img {
+    background: rgba(224, 218, 218, 0.65);
+    background-size: cover;
+}
+
+.ws-title-wrapper {
+    display: none;
+}
+
+#wowslider-container1 .ws_controls {
+    display: none;
+}
+
+
+/*-------4.2. 404 Page---------*/
+
+.mrg-btm {
+    margin-top: 50px;
+}
+
+
+/*
+-------------------------------------
+5. Feature Area
+-------------------------------------
+*/
+
+.feature-area {
+    padding: 50px 0 70px 0;
+}
+
+.features-head {
+    margin-bottom: 50px;
+}
+
+.single-feature {
+    text-align: center;
+    margin: 0 15px 0 15px;
+    background-color: #fff;
+}
+
+.single-feature p {
+    padding-bottom: 20px;
+}
+
+.feature-icon {
+    padding-top: 20px;
+}
+
+.feature-icon i {
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+}
+
+.feature-icon i:after {
+    position: absolute;
+    content: "";
+    height: 65px;
+    width: 70px;
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #ddd;
+    top: 8%;
+    left: 41%;
+}
+
+
+
+/*
+-------------------------------------
+6. About Area
+-------------------------------------
+*/
+
+.about-area {
+    background: #fff;
+}
+
+.about-bg {
+    padding: 50px 0 60px 0;
+}
+
+.about-details {
+    margin-bottom: 20px;
+}
+
+.about-details h2 {
+    margin-bottom: 40px;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.about-img {
+    padding-top: 20px;
+}
+
+
+/*-------6.1. About Area (Home Page3)---------*/
+
+.vedio-img {
+    background-image: url(../img/about/video.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    margin: 22px 0 15px 0;
+}
+
+
+/*
+-------------------------------
+7. Portfolio Area
+-------------------------------
+*/
+
+.portfolio-area {
+    padding: 50px 0 70px 0;
+}
+
+.portfolio-bg {
+    margin-bottom: -30px;
+}
+
+.portfolio-details {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+button.control {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background: transparent;
+    outline: 0;
+    outline-color: transparent;
+    border: 1px solid #ddd;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 30px
+}
+
+.single-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.latest-img {
+    position: relative;
+}
+
+.latest-img:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 0;
+    background: rgba(21, 20, 20, 0.65);
+    opacity: 0;
+}
+
+.latest-img h5 {
+    position: absolute;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    top: 0%;
+    left: 30%;
+    display: inline-block;
+}
+
+.latest-img p {
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+}
+
+
+/*-------7.1. (2 Column) Portfolio page-------*/
+
+.port-img h5 {
+    position: absolute;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    top: 0%;
+    left: 34%;
+    display: inline-block;
+}
+
+.port-img p {
+    position: absolute;
+    top: 52%;
+    left: 40%;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+}
+
+
+/*-------7.2. (4 Column) Portfolio page-------*/
+
+.port2-img h5 {
+    position: absolute;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    top: 0%;
+    left: 20%;
+    display: inline-block;
+}
+
+.port2-img p {
+    position: absolute;
+    top: 58%;
+    left: 32%;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+}
+
+
+/*
+-------------------------------
+8. Counter Area
+-------------------------------
+*/
+
+.counter-area {
+    background: #fff;
+}
+
+.counter-box {
+    padding: 50px 0 70px 0;
+}
+
+.counter-box i {
+    padding-top: 30px;
+    font-size: 25px;
+}
+
+.counter-box h5 {
+    margin-bottom: 70px;
+    text-transform: uppercase;
+}
+
+
+/*
+-------------------------------
+9. Blog Area
+-------------------------------
+*/
+
+.blog-area {
+    padding: 50px 0 70px 0;
+}
+
+.blog-bg {
+    margin-bottom: 15px;
+}
+
+.blog-details {
+    margin-bottom: 50px;
+}
+
+.blog-img {
+    overflow: hidden;
+    
+}
+
+.blog-img img {
+    display: inline-block;
+    overflow: hidden;
+    
+}
+
+
+/*-------9.1. Blog Area (Home Page2)---------*/
+
+.single-blog {
+    margin-bottom: -30px;
+}
+
+
+/*-------9.2. Blog Area (Blog4 Page)---------*/
+
+input#mod-search-searchword2 {
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.blog-news h3 {
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.latest-details {
+    padding-bottom: 15px;
+}
+
+.pad-btm {
+    margin-bottom: 50px;
+}
+
+
+/*
+-------------------------------
+10. Feedback Area
+-------------------------------
+*/
+
+.feedback-area {
+    background: #fff;
+    padding: 50px 0 70px 0;
+}
+
+.feedback-bg {
+    margin-bottom: -10px;
+}
+
+.single-feedback h2 {
+    margin-bottom: 40px;
+}
+
+p.bold {
+    margin-bottom: 0px;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.owl-nav {
+    text-align: center;
+}
+
+.owl-nav [class*=owl-] {
+    color: #343536;
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 10px;
+    margin-top: 35px;
+    text-transform: uppercase;
+    padding: 4px 35px;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+
+
+/*
+-------------------------------
+11. Team Area
+-------------------------------
+*/
+
+.team-area {
+    padding: 50px 0 70px 0;
+}
+
+.team-details {
+    margin-bottom: 50px;
+}
+
+.team-img {
+    position: relative;
+}
+
+.team-img:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    display: inline-block;
+    background: rgba(234, 229, 229, 0.65);
+    opacity: 0;
+}
+
+.team-text {
+    border: 1px dotted #ddd;
+    text-align: center;
+    padding: 10px 0 30px 0;
+}
+
+p.another {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 20px;
+}
+
+.contact-icon {
+    text-align: center;
+}
+
+.contact-icon i {
+    text-decoration: none;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+
+}
+
+
+
+/*
+-------------------------------
+12. Contact Area
+-------------------------------
+*/
+
+.contact-area {
+    background: #fff;
+    padding: 50px 0 70px 0;
+}
+
+.contact-area .title h2 {
+    margin-bottom: 50px;
+}
+
+.contact-form-box {
+    margin-bottom: 15px;
+}
+
+textarea.form-control {
+    height: auto;
+    height: 150px;
+}
+
+.form-group {
+    outline: 0;
+    outline-color: transparent;
+}
+
+.form-control:focus {
+    border-color: #ddd;
+    outline: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+/*
+-------------------------------
+13. Google Map Area
+-------------------------------
+*/
+
+.map-sec iframe {
+    height: 325px;
+    width: 100%;
+}
+
+/*
+-------------------------------
+13. Google Map Area
+-------------------------------
+*/
+
+.map-sec iframe {
+    height: 325px;
+    width: 100%;
+}
+/*
+-------------------------------
+14. Preloader Area
+-------------------------------
+*/
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 99999999;
+}
+
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url(../img/preloader/preloader.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+}
+
+
+/*
+-------------------------------
+15. Footer Area
+-------------------------------
+*/
+
+.footer-area {
+    background: #343536;
+}
+
+.footer-text {
+    padding: 15px 0;
+}
+
+.footer-text p {
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+}
+
+
+/*
+-------------------------------
+15.1. Top arrow scroll area
+-------------------------------
+*/
+
+.top-arrow {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    top: auto;
+}
+
+.top-arrow i a {
+    text-decoration: none;
+}
+
+.top-arrow i {
+    font-size: 35px;
+    height: 38px;
+    color: #eff3f1;
+    width: 35px;
+    cursor: pointer;
+    text-align: center;
+    background: #343536;
+    border: 2px solid #343536;
+}
+
+
+/*
+-------------------------------
+16. Home V2(Agency) Page
+-------------------------------
+*/
+
+.address-bg {
+    padding: 70px 0;
+}
+
+.address-details {
+    text-align: center;
+}
+
+.address-details i {
+    font-size: 35px;
+}
+
+.address-details p {
+    margin-bottom: -3px;
+}
