@@ -1028,6 +1028,26 @@ ul.work li.active {
 * ----------------------------------------------------------------------------------------
 */
 
+#map {
+    height: 350px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.map-location {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: #000;
+}
+
+.map-location h2 {
+    color: #FFC815;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 5px 10px;
+}
 
 
 /*

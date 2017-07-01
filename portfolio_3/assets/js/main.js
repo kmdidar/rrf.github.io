@@ -197,27 +197,29 @@ Version      : 1.0
          */
 
 
-             var center = [23.7519228,90.3498603];
-    $('.marker')
-      .gmap3({
-        center: center,
-        zoom: 12,
-        mapTypeId : google.maps.MapTypeId.ROADMAP
-      })
-      .marker({
-        position: center,
-        icon: 'http://maps.google.com/mapfiles/marker_green.png'
-      })
-      .infowindow({
-                position: center,
-                content:'<div style="color:#000000; border:1px solid #ddd;background-color: #A3CCFF; width:500px; line-height:46px; font-weight: 400; height: 50px; text-align:center">' +
-          'Bocila, Mohammadpur, Dhaka)' +'</div>',
-                pixelOffset: new google.maps.Size(0, -30)
-            })
-            .then(function (infowindow) {
-                infowindow.open(this.get(0)); // this.get(0) return the map (see "get" feature)
-            })
+        var myCenter = new google.maps.LatLng(23.7645776,90.3422604);
 
+        function initialize() {
+            var mapProp = {
+                zoom: 14,
+                center: myCenter,
+                scrollwheel: false,
+                styles: [{
+                    "stylers": [{
+                            "hue": "#ffffff"
+                        }, {
+                            saturation: -110
+                        },
+                        {
+                            gamma: 2
+                        }]
+                }],
+
+                mapTpeIdy: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("map"), mapProp);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
 
 
         /*
