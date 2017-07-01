@@ -1,0 +1,1141 @@
+/*
+* ----------------------------------------------------------------------------------------
+Author       : kmdidar
+Template Name: DIDAR -Modern Personal Portfolio Template
+Version      : 1.0
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GLOBAL CSS STYLE
+* 02.PRELOADER & BOUNCE CCS STYLE
+* 03.HOMEPAGE CSS STYLE
+    -LOGO CSS
+    -MENU CSS
+    -SLIDER CSS STYLE
+    -VIDEO CSS STYLE
+* 04.ABOUT CSS STYLE
+* 05.SERVICE CSS STYLE
+    -SINGLE SERVICE CSS
+* 06. WORK EXPERIENCE & EDUCATION CSS STYLE
+* 07.SKILLS CSS STYLE
+* 08.WORK CSS STYLE
+* 09.COMPLETE PROJECT CSS STYLE
+* 10.TESTIMONIAL CSS STYLE
+* 11.CONTACT CSS STYLE
+* 12.MAP CSS STYLE
+* 13.FOOTER CSS STYLE
+
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GLOBAL STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+body {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    height: 100%
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {}
+
+a {
+    text-decoration: none;
+    -webkit-transition: all 0.4s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    color: #000;
+}
+
+img {
+    width: 100%;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+p {
+    line-height: 28px;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    border: 0 none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.no-padding {
+    padding: 0
+}
+
+.section-padding {
+    padding: 70px 0px;
+}
+
+.section-title {
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    margin-top: 0;
+    font-weight: 900;
+    text-transform: capitalize;
+    font-size: 40px;
+    background: #FFC815;
+    display: inline-block;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.section-title p {
+    font-size: 12px;
+    font-style: italic;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 02.PRELOADER & BOUNCE CCS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.preloader {
+    background: #000;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+.status-mes {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -22px 0 0 -22px;
+    font-size: 10px;
+    text-indent: -12345px;
+    border-top: 5px solid rgba(0, 0, 0, 0.08);
+    border-right: 5px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #FFC815;
+    border-radius: 50%;
+    -webkit-animation: spinner 700ms infinite linear;
+    animation: spinner 700ms infinite linear;
+    z-index: 10000;
+}
+
+@-webkit-keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 03.HOMEPAGE CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.welcome-area {
+    height: 100%;
+}
+
+.welcome-image-area {
+    position: relative;
+    height: 100%;
+    background: url(../images/bg.jpg);
+    background-size: cover;
+    z-index: 1;
+}
+
+.welcome-image-area:after {
+    position: absolute;
+    background: rgba(0, 0, 0, .6);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+}
+
+.display-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.display-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header-text h2 {
+    color: #fff;
+    font-size: 80px;
+    margin-top: 0;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.header-text h3 {
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+    font-weight: 300;
+    line-height: 40px;
+}
+
+.header-text h3 span {
+    margin: 0px 10px;
+    border-bottom: 1px solid #FFC815;
+}
+
+a.header-button {
+    display: inline-block;
+    background: #FFC815;
+    color: #000;
+    padding: 12px 20px 10px 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    font-weight: 400;
+}
+
+.header-text .home-arrow-down {
+    text-align: center;
+    position: absolute;
+    bottom: -240px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.header-text .home-arrow-down .btn {
+    font-size: 35px;
+}
+
+.header-text .home-arrow-down .fa {
+    color: #ffffff;
+    display: inline-block;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-animation-name: home-arrow-down;
+    animation-name: home-arrow-down;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes home-arrow-down {
+    from {
+        -webkit-transform: translate3d( 0, 0px, 0);
+        transform: translate3d( 0, 0px, 0);
+        filter: alpha(opacity=0);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+    10% {
+        -webkit-transform: translate3d( 0, 5px, 0);
+        transform: translate3d( 0, 5px, 0);
+        filter: alpha(opacity=100);
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
+    to {
+        -webkit-transform: translate3d( 0, 30px, 0);
+        transform: translate3d( 0, 30px, 0);
+        filter: alpha(opacity=0);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+}
+
+@keyframes home-arrow-down {
+    from {
+        -webkit-transform: translate3d( 0, 0px, 0);
+        transform: translate3d( 0, 0px, 0);
+        filter: alpha(opacity=0);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+    10% {
+        -webkit-transform: translate3d( 0, 5px, 0);
+        transform: translate3d( 0, 5px, 0);
+        filter: alpha(opacity=100);
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
+    to {
+        -webkit-transform: translate3d( 0, 30px, 0);
+        transform: translate3d( 0, 30px, 0);
+        filter: alpha(opacity=0);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+}
+
+.header-top-area {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+.logo {
+    padding-top: 28px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.logo a {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.mainmenu .navbar-nav li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 30px 15px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    font-weight: 300;
+}
+
+.mainmenu .navbar-nav li a:hover {
+    background: none;
+    color: #000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    background: #FFC815;
+}
+
+.menu-bg .mainmenu .navbar-nav li.active a {
+    background: none;
+    color: #fff;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    background: #FFC815;
+}
+
+.nav li a:focus,
+.nav li a:hover {
+    background: none;
+    color: #fff;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navbar {
+    margin: 0;
+}
+
+.menu-bg {
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    background: #000;
+}
+
+.menu-bg .logo {
+    padding-top: 18px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.menu-bg .mainmenu .navbar-nav li a {
+    color: #fff;
+    padding: 20px 15px;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.menu-bg .mainmenu .navbar-nav li a:hover {
+    color: #fff;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* HOMEPAGE SLIDER BACKGROUND CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.welcome-area,
+.welcome-slider-area,
+.welcome-slider-area div {
+    height: 100%;
+}
+
+.welcome-slider-area div.single-slide-item-tablecell,
+.welcome-slider-area div.single-slide-item-tablecell div {
+    height: auto;
+}
+
+.single-slide-item-table {
+    display: table;
+    width: 100%;
+}
+
+.single-slide-item-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.single-slide-item {
+    position: relative;
+    z-index: 1;
+}
+
+.single-slide-item:after {
+    position: absolute;
+    background: rgba(0, 0, 0, .8);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+}
+
+.slide-1 {
+    background: url(../images/bg/slider1.jpg) scroll 0 0;
+    background-size: cover;
+}
+
+.slide-2 {
+    background: url(../images/bg/slider2.jpg) scroll 0 0;
+    background-size: cover;
+}
+
+.slide-3 {
+    background: url(../images/bg/bg.jpg) scroll 0 0;
+    background-size: cover;
+}
+
+.carousel-fade .carousel-inner .item {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+}
+
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+}
+
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.carousel-fade .carousel-inner .item {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.carousel-indicators {
+    left: 9%;
+}
+
+.carousel-indicators li {
+    width: 4px;
+    height: 20px;
+    border-radius: 0px;
+    margin: 0;
+    background: #FFC815;
+    border: none;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.carousel-indicators li.active {
+    width: 4px;
+    height: 16px;
+    border: none;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* VIDEO BACKGROUND CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.welcome-video-area {
+    position: relative;
+    height: 100%;
+    background-size: cover;
+    z-index: 1;
+    background-position: center center;
+}
+
+.welcome-video-area:after {
+    position: absolute;
+    background: rgba(0, 0, 0, .5);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+}
+
+.display-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.display-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 04.ABOUT CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.about-text h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.about-text h2:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    height: 5px;
+    width: 60px;
+    background: #FFC815;
+    margin-top: 30px;
+}
+
+.about-text h3 {
+    font-size: 30px;
+    margin-top: 0;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.about-text p {
+    font-weight: 300;
+}
+
+.about-text a {
+    display: inline-block;
+    background: #FFC815;
+    color: #000;
+    padding: 12px 20px 10px 20px;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 05.SERVICE CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.service-area {
+    background: #fff;
+}
+
+.single-service i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #FFC815;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.single-service h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    color: #000;
+}
+
+.single-service h5 {
+    font-style: italic;
+    background: #000;
+    color: #FFC815;
+    padding: 10px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.single-service p {
+    margin-bottom: 0;
+    color: #333;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 06. WORK EXPERIENCE & EDUCATION CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.work-experience-area {}
+
+.single-experience {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.single-experience h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    color: #000;
+}
+
+.single-experience h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+h2.education-heading {
+    margin-bottom: 40px;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.single-experience i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #FFC815;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.single-experience h5 {
+    font-style: italic;
+    background: #000;
+    color: #FFC815;
+    padding: 10px;
+    display: inline-block;
+    font-size: 12px;
+    float: right;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 07.PROGRESS CIRCLE CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.single-progress h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+    -webkit-transition: .3s;
+    transition: .3s;
+    color: #000;
+    text-align: center;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 08.WORK CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.work {}
+
+.work .col-md-4 {
+    padding: 0;
+}
+
+.work-inner .mix {
+    display: none;
+}
+
+ul.work {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+ul.work li {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    border: none;
+    cursor: pointer;
+}
+
+ul.work li:hover {
+    color: #FEEA0E;
+    border: none;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+ul.work li.active {
+    border: none;
+    color: #FEEA0E;
+}
+
+.work .item {
+    padding: 0;
+    margin: 0;
+}
+
+.work figure.effect-lily img {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.work figure.effect-lily:hover img {
+    opacity: .2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+}
+
+.work .grid figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 320px;
+    max-width: 480px;
+    max-height: 360px;
+    width: 100%;
+    height: auto;
+    background: #000;
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.work figure.effect-lily h2 {
+    margin-top: 30%;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+    -webkit-transition: .3s;
+    transition: .3s;
+    background: #FFC815;
+    color: #000;
+    display: inline-block;
+    padding: 2px 10px;
+}
+
+.work figure.effect-lily p {
+    font-size: 16px;
+    text-transform: lowercase;
+    color: #fff;
+}
+
+.work figure.effect-lily p strong {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+
+.work .item:hover figure.effect-lily h2 {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 09.COMPLETE PROJECT CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.single-project-complete h2 {
+    font-size: 50px;
+    font-weight: 900;
+    color: #000;
+}
+
+.single-project-complete h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 10.TESTIMONIAL CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.testimonial-area {}
+
+.single-testimonial {
+    padding: 0px 20px;
+}
+
+.single-testimonial h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.single-testimonial h3 {
+    font-size: 12px;
+    text-transform: capitalize;
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.single-testimonial i {
+    color: #FFC815;
+    font-size: 20px;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 11.CONTACT CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.contact-me-area {}
+
+.single-contact-details {
+    margin-top: 30px;
+}
+
+.single-contact-details span {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.single-contact-details h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.single-contact-details p {}
+
+.single-contact-details i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #FFC815;
+}
+
+.contact-form {
+    border-radius: 3px;
+    margin-top: 30px;
+}
+
+.form-control {
+    display: block;
+    border: 0px;
+    width: 100%;
+    height: 45px;
+    padding: 5px 0px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: transparent;
+    background-image: none;
+    border-radius: 0px;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(0, 0, 0, .5);
+    margin-bottom: 25px;
+}
+
+.form-control:focus {
+    border-color: #FFC815;
+    outline: 0;
+    box-shadow: none;
+}
+
+.contact-form input[type='submit'] {
+    display: inline-block;
+    color: #000;
+    background: #FFC815;
+    padding-top: 14px;
+    padding-bottom: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border: 1px solid #FFC815;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-radius: 0px;
+    font-weight: 600;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+    outline: none;
+}
+
+.success {
+    background: #50B948 none repeat scroll 0 0;
+    color: #fff;
+    font-weight: 700;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 12.MAP CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 13.FOOTER CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.footer-area {
+    background: #0C0B0B;
+}
+
+.footer-area p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer-social-link {
+    text-align: right;
+}
+
+.footer-social-link ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-social-link ul li {
+    display: inline-block;
+    margin: 0px 6px;
+}
+
+.footer-social-link ul li i {
+    display: block;
+    font-size: 16px;
+    background: #FFC815;
+    color: #000;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* PREVIEW CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.all {
+    background: url(../images/bg/bg.jpg);
+    height: 100%;
+    background-size: cover;
+    position: relative;
+}
+
+.all-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .9);
+}
+
+.preview-single-image img {
+    width: 100%;
+}
+
+.preview-single-image {
+    transition: 1s;
+    box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.preview-single-image:hover {
+    transition: 1s;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.preview-single-image h2 {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 30px 20px;
+}
+
+.preview-header-top-area {
+    padding: 50px 0px;
+}
+
+.preview-header-top-area h2 {
+    font-size: 80px;
+    color: #FFC815;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.preview-header-top-area p {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.main {
+    margin-bottom: 180px;
+}
