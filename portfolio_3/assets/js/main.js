@@ -1,6 +1,6 @@
 /*
 * ----------------------------------------------------------------------------------------
-Author       : kmdidar
+Author       : Creativepersonal
 Template Name: DIDAR -Modern Personal Portfolio Template
 Version      : 1.0
 * ----------------------------------------------------------------------------------------
@@ -196,7 +196,6 @@ Version      : 1.0
          * ----------------------------------------------------------------------------------------
          */
 
-
         var myCenter = new google.maps.LatLng(23.7645776,90.3422604);
 
         function initialize() {
@@ -220,6 +219,7 @@ Version      : 1.0
             var map = new google.maps.Map(document.getElementById("map"), mapProp);
         }
         google.maps.event.addDomListener(window, 'load', initialize);
+
 
 
         /*
