@@ -196,6 +196,7 @@ Version      : 1.0
          * ----------------------------------------------------------------------------------------
          */
 
+
              var center = [23.7519228,90.3498603];
     $('.marker')
       .gmap3({
@@ -210,7 +211,7 @@ Version      : 1.0
       .infowindow({
                 position: center,
                 content:'<div style="color:#000000; border:1px solid #ddd;background-color: #A3CCFF; width:500px; line-height:46px; font-weight: 400; height: 50px; text-align:center">' +
-          '*** EID MUBARAK RRF***)' +'</div>',
+          'Bocila, Mohammadpur, Dhaka)' +'</div>',
                 pixelOffset: new google.maps.Size(0, -30)
             })
             .then(function (infowindow) {
